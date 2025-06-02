@@ -19,6 +19,7 @@ module d_flipflop_with_enable(clock,En,D,Q);
   output reg Q = 1'b0;
 
   always @(posedge clk)
+  
   begin
   
     if (En)
@@ -43,7 +44,9 @@ module d_flipflop_test();
   d_flipflop uut(.clock(clk), .En(en), .D(d), .Q(q));
 
   initial
+  
   begin
+  
     $dumpfile("d_flipflop.vcd");
     
     $dumpvars(0, d_flipflop_test);
