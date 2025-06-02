@@ -8,8 +8,11 @@ This repository demonstrates two implementations of a **1-bit Full Adder**:
 ## Full adder in dataflow:
 ### Design code:
 module full_adder(A,B,C,Sum,Carry);
+
   input A,B,C;
+  
   output Sum,Carry;
+  
   assign Sum = A ^ B ^ C;
   assign Carry = (A&B) | (B&C) | (C&A);
 endmodule
