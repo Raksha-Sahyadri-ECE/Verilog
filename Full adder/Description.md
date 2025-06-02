@@ -5,7 +5,7 @@ This repository demonstrates two implementations of a **1-bit Full Adder**:
 - **Structural Design** using two half adders and an OR gate
 - **Dataflow Design** using Verilog operators
 
-## Full adder dataflow:
+## Full adder in dataflow:
 ### Design code:
 module full_adder(A,B,C,Sum,Carry);
   input A,B,C;
